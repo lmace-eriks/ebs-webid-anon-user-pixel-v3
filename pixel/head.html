@@ -1,0 +1,21 @@
+<script>
+  (function() {
+    var appId = "e67cf793-6fd8-4fb0-93fa-1ebb56d737c8";
+    if (!appId) {
+      console.error('Warning: No APP NAME ID is defined. Please configure it in the apps admin.');
+      return
+    }
+
+    console.log("Header Code Running...");
+    // Supplied WebID Pixel Code Below - LM
+
+    var _pxDataLayer = {}; _pxDataLayer.cdmn = 'aa.trkn.us'; _pxDataLayer.lm = 'e'; _pxDataLayer.cid = 'c013'; _pxDataLayer.tt = 'cs.js'; _pxDataLayer.evid = 'e67cf793-6fd8-4fb0-93fa-1ebb56d737c8'; _pxDataLayer.suu = '1'; function __pxDataTag(p, d, w, l) {
+    function q(n, v) { return p[n] ? ((v ? '' : '&') + n + '=' + p[n]) : ''; } p.dmn = p.dmn || (w.top[l] === w[l] ? w[l].toString() : d.referrer).split('/')[2]; var a = '//' + p.cdmn + '/1/' + p.lm + '/' + p.tt, t = p.tt.split('.').pop(); p.evid = p.evid || (Date.now() || newdate.getTime()) + '-' + Math.floor(Math.random() * 9999);
+    delete p.cdmn; delete p.lm; delete p.tt; var b = t == 'dhj' ? q('cid', 1) + q('cls') + q('dmn') + q('evid') : Object.keys(p).map(function (k) { return q(k, 1); }).join('&'); s = d.createElement(t == 'gif' ? 'img' : 'script'); s.id = 'pxscrpt'; s.async = s.defer = !0; s.src = a + '?' +
+        b; d.body.appendChild(s);
+}; var pxcelData = _pxDataLayer; if (document.readyState === "complete" || document.readyState === "interactive") { __pxDataTag(_pxDataLayer, document, window, 'location'); } else { document.addEventListener('DOMContentLoaded', function () { __pxDataTag(_pxDataLayer, document, window, 'location'); }); }
+
+    console.log("Header Code Complete.")
+    
+  })()
+</script>
